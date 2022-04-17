@@ -64,7 +64,7 @@ const permissions = [
         event: '0',
     },
     {
-        user: '0',
+        user: '1',
         event: '2',
     },
 ]
