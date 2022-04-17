@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Permission from './components/Permission';
+import PermissionList from './components/PermissionList';
+import {users, events, permissions} from './data/mockData';
+import banner from './data/banner.jpg';
 
 function App() {
+  const peddan = users[0];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={banner}/>
+      <PermissionList list={events} user={peddan}/>
     </div>
   );
 }
